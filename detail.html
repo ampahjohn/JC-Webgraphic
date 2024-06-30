@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails chambre</title>
+    <link rel="stylesheet" href="detail.css">
+</head>
+
+<body> 
+
+
+ <div class="container-fluid bg-dark px-0">
+            <div class="row gx-0">
+                <div class="col-lg-3 bg-dark d-none d-lg-block">
+                    <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                        <h1 class="m-0 text-primary text-uppercase">Hotel rubis</h1>
+                    </a>
+                </div>
+
+        <!-- Détails de la chambre Start -->
+        <div class="container">
+            <h1>Détails chambre</h1>
+
+            <div class="room-images">
+                <!-- Ajoutez autant d'images que nécessaire pour chaque chambre -->
+                <img src="img/f.jpg" alt="Chambre 1">
+                <img src="img/t.jpg" alt="Chambre 1">
+                <img src="img/y.jpg" alt="Chambre 1">
+                <img src="img/room-3.jpg" alt="Chambre1">
+            </div>
+
+          <p>.Les chambres d'hôtel varient en taille, offrant différents types de lits et d'équipements, notamment des salles de bains privatives, la climatisation, le Wi-Fi, un service en chambre, des coffres-forts, avec des options de vue et d'insonorisation, adaptées à divers besoins et préférences.  </p>
+          
+
+            <div>
+                <a class="btn btn-primary" href="booking.html">Réserver maintenant</a>
+            </div>
+        </div>
+        <!-- Détails de la chambre End -->
+
+    </div>
+
+    <!-- Détails de la chambre Start -->
+        <div class="container">
+           
+
+            <div class="room-images">
+                <!-- Ajoutez autant d'images que nécessaire pour chaque chambre -->
+                <img src="img/f.jpg" alt="Chambre 1">
+                <img src="img/t.jpg" alt="Chambre 1">
+                <img src="img/y.jpg" alt="Chambre 1">
+                <img src="img/room-3.jpg" alt="Chambre1">
+            </div>
+
+          <p>.Les chambres d'hôtel varient en taille, offrant différents types de lits et d'équipements, notamment des salles de bains privatives, la climatisation, le Wi-Fi, un service en chambre, des coffres-forts, avec des options de vue et d'insonorisation, adaptées à divers besoins et préférences.  </p>
+          
+
+            <div>
+                <a class="btn btn-primary" href="booking.html">Réserver maintenant</a>
+            </div>
+        </div>
+        <!-- Détails de la chambre End -->
+
+    </div>
+
+
+    <script>
+
+    const images = document.querySelectorAll('.room-images img');
+
+    images.forEach(image => {
+        image.addEventListener('mouseover', () => {
+            image.style.transform = 'scale(1.1)';
+        });
+
+        image.addEventListener('mouseout', () => {
+            image.style.transform = 'scale(1)';
+        });
+    });
+</script>
+
+</body>
+
+</html>
